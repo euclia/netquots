@@ -16,14 +16,16 @@
 using System;
 namespace netquots.Models
 {
+    /// <summary>Can user proceed
+    /// </summary>
     public class CanProceed
     {
+        /// <summary>The user's id we wish to see if he can continue
+        /// </summary>
         public String userid { get; set; }
+        /// <summary>True or False
+        /// </summary>
         public Boolean proceed { get; set; }
 
-        public CanProceed()
-        {
-
-        }
     }
 }

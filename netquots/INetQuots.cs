@@ -19,6 +19,8 @@ using netquots.Models;
 
 namespace netquots
 {
+    /// <summary> INetQuots Interface
+    /// </summary>
     public interface INetQuots
     {
         /// <summary>This method Creates a user if he does not exist on the Quots Application

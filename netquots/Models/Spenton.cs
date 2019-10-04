@@ -17,15 +17,18 @@ using System.Collections.Generic;
 
 namespace netquots.Models
 {
+    /// <summary>Users spent credits
+    /// </summary>
     public class Spenton
     {
 
         private String appid;
+        /// <summary>App id on witch credits are spent
+        /// </summary>
         public String Appid { get { return appid; } set { appid = value; } }
         private Dictionary<String, Object> usage;
+        /// <summary>Dictionary of usage type and credits spent
+        /// </summary>
         public Dictionary<String, Object> Usage { get { return usage; } set { usage = value; } }
-        public Spenton()
-        {
-        }
     }
 }

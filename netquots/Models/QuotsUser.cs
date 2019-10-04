@@ -17,22 +17,29 @@ using System.Collections.Generic;
 
 namespace netquots.Models
 {
+    /// <summary>A Quots user
+    /// </summary>
     public class QuotsUser
     {
         private String id;
+        /// <summary>Users id
+        /// </summary>
         public String Id { get { return id; } set { id = value; } }
         private String email;
+        /// <summary>Users email
+        /// </summary>
         public String Email { get { return email; } set { email = value; } }
         private String username;
+        /// <summary>Users username
+        /// </summary>
         public String Username { get { return username; } set { username = value; } }
         private float credits;
+        /// <summary>Users credits
+        /// </summary>
         public float Credits { get { return credits; } set { credits = value; } }
         private List<Spenton> spenton;
+        /// <summary>Users history of spent
+        /// </summary>
         public List<Spenton> Spenton { get { return spenton; } set { spenton = value; } }
-
-        public QuotsUser()
-        {
-
-        }
     }
 }

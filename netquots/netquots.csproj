@@ -3,13 +3,31 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackOnBuild>true</PackOnBuild>
+    <PackageId>netquots</PackageId>
+    <PackageVersion>0.1</PackageVersion>
+    <Authors>Pantelis Karatzas</Authors>
+    <PackageLicenseUrl>https://opensource.org/licenses/Apache-2.0</PackageLicenseUrl>
+    <Owners>Euclia</Owners>
+    <PackageProjectUrl>https://github.com/euclia/netquots</PackageProjectUrl>
+    <PackageReleaseNotes>First release of netquots. The .net client for quots</PackageReleaseNotes>
+    <Summary> .net client for quots</Summary>
+    <PackageTags>Quots, .net, credits, resources, microservice</PackageTags>
+    <Title>netquots</Title>
+    <Description>.Net client for Quots Application</Description>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType></DebugType>
+    <DocumentationFile>bin\Release\netstandard2.0\netquots.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Class1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
   </ItemGroup>
   <ProjectExtensions>
     <MonoDevelop>

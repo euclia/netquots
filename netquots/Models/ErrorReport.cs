@@ -16,15 +16,15 @@
 using System;
 namespace netquots.Models
 {
+    /// <summary>Error report from API
+    /// </summary>
     public class ErrorReport
     {
-
+        /// <summary>Error's message
+        /// </summary>
         public string message { get; set; }
+        /// <summary>Error's status
+        /// </summary>
         public int status { get; set; }
-
-        public ErrorReport()
-        {
-
-        }
     }
 }
